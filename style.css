@@ -1,0 +1,145 @@
+@import url('https://fonts.googleapis.com/css2?family=Kanit:ital@0;1&family=Poppins&display=swap');
+body{
+    min-height: fit-content;
+    margin: 0;
+    padding: 0;
+    font-family: 'Kanit', sans-serif;
+    font-family: 'Poppins', sans-serif;
+    background-color: #9DB2BF;
+}
+#info{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translateX(-50%) translateY(-50%);
+    width: 30%;
+    height: 40vh;
+    border-radius: 15px;
+    border-bottom: 3px solid #526D82;
+    background-color: #DDE6ED;
+    transition: all 1s;
+    z-index: 3;
+}
+#infoTop{
+    height: 25%;
+    display: grid;
+    place-items: center;
+}
+#infoCircle{
+    display: grid;
+    place-items: center;
+    height: 65%;
+    aspect-ratio: 1/1;
+    font-size: 2em;
+    border-radius: 50%;
+    border: 3px solid #526D82;
+}
+#infoBottom{
+    height: 75%;
+    display: grid;
+    place-items: center;
+    justify-content: center;
+    text-align: center;
+}
+#infoTitle{
+    font-size: 1.5em;
+}
+#infoText ol{
+    list-style-position: inside;
+    padding: 0 5% 5% 5%;
+}
+#infoButton{
+    width: 30%;
+    height: 70%;
+    border-radius: 10px;
+    border: 2px solid #526D82;
+    background-color: #DDE6ED;
+    font-size: 1em;
+    cursor: pointer;
+    margin-bottom: 7.5%;
+    transition: all .5s;
+}
+#infoButton:hover{
+    background-color: #9DB2BF;
+}
+#overley{
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100vh;
+    background-color: rgba(0,0,0,.5);
+    z-index: 2;
+    transition: all 1s;
+}
+#nav{
+    position: relative;
+    display: flex;
+    place-items: center;
+    justify-content: space-around;
+    font-size: 1.25em;
+    font-weight: bold;
+    height: 8vh;
+    background-color: #DDE6ED;
+    border-radius: 15px;
+    margin: 2vh 5vh 0 5vh;
+    z-index: 1;
+    border-bottom: 3px solid #526D82;
+}
+#right{
+    color: green;
+}
+#wrong{
+    color: red;
+}
+#gridContainer{
+    height: 84vh;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
+    justify-content: center;
+    place-items: center;
+    margin: 2.5vh 5vh 2.5vh 5vh;
+    row-gap: 2.5%;
+    column-gap: 2.5%;
+}
+.card{
+    position: relative;
+    width: 100%;
+    height: 100%;
+    cursor: pointer;
+    text-align: center;
+    border-radius: 15px;
+    transition: transform 2s, opacity 2s, color 4s;
+    color: transparent;
+    transform: rotateY(-180deg);
+}
+.cardTop{
+    position: relative;
+    height: 80%;
+    background-color: #DDE6ED;
+    display: grid;
+    place-items: center;
+    font-size: 1.5em;
+    border-radius: 15px 15px 0 0;
+}
+.cardBottom{
+    height: 20%;
+    background-color: #DDE6ED;
+    display: grid;
+    place-items: center;
+    border-radius: 0 0 15px 15px;
+    border-bottom: 3px solid #526D82;
+}
+.cardLogo{
+    position: absolute;
+    display: grid;
+    place-items: center;
+    width: 100%;
+    height: 100%;
+    color: black;
+    font-size: 3em;
+    border-radius: 15px;
+    transition: all .5s;
+    transform: rotateY(180deg);
+    z-index: 1;
+}
